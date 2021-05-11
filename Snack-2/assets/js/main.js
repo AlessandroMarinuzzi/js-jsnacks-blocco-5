@@ -14,7 +14,7 @@ var zucchiniArray = [
     { weight:8, length:19},
     { weight:7, length:13},
     { weight:12, length:16},
-    { weight:10, length:11}
+    { weight:10, length:18}
 ];
 console.log(zucchiniArray);
 
@@ -36,10 +36,13 @@ console.log(shortZucchini);
 var shortZucchiniWeight = 0;
 var longZucchiniWeight = 0;
 
-for(var i = 0; i < longZucchini.length , i < shortZucchini.length; i++){
-    shortZucchiniWeight += shortZucchini[i].weight;
+for(var i = 0; i < longZucchini.length; i++){
     longZucchiniWeight += longZucchini[i].weight;
-
 }
+for(var i = 0; i < shortZucchini.length; i++){
+    shortZucchiniWeight += shortZucchini[i].weight;
+}
+
+
 console.log(shortZucchiniWeight);
 console.log(longZucchiniWeight);
